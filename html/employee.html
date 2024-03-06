@@ -1,0 +1,49 @@
+<div class="container mt-3">
+    <button class="btn btn-primary" id="refreshEmployee">Refresh Employee List</button>
+    <button class="btn btn-success ml-3" data-toggle="modal" data-target="#addEmployeeModal" id="addEmployeeMdl">Add Employee</button>
+    <table class="table mt-3" id="data-table">
+        
+        <tbody id="employeeTableBody">
+        </tbody>
+    </table>
+</div>
+
+<!-- Add Employee Modal -->
+<div class="modal fade" id="addEmployeeModal" tabindex="-1" role="dialog" aria-labelledby="addEmployeeModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addEmployeeModalLabel">Add Employee</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="closeEmployeeModalBtn">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="addEmpName" class="form-label">Employee Name</label>
+                        <input type="text" class="form-control" id="addEmpName" placeholder="Enter employee name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="addOvertime" class="form-label">Overtime Eligible</label>
+                        <select class="form-select" id="addOvertime" required>
+                            <option value="Y">Yes</option>
+                            <option value="N">No</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="addEmpStart" class="form-label">Employee Start Date</label>
+                        <input type="date" class="form-control" id="addEmpStart" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="addEmpEnd" class="form-label">Employee End Date</label>
+                        <input type="date" class="form-control" id="addEmpEnd" value="">
+                    </div>
+                    <div class="d-flex justify-content-end mt-5 mb-3">
+                        <button type="button" class="btn btn-primary w-100" id="addEmployeeBtn">Add Employee</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

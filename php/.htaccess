@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /ABM/Practicum/Project/Timesheet%20App/php/
+
+    # Set login.php as the default index file
+    DirectoryIndex login.php
+
+    # Rest of your .htaccess rules (if any)
+</IfModule>

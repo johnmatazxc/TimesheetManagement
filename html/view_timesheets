@@ -1,0 +1,8 @@
+<!-- Content for the View Timesheet tab -->
+<div>
+    <table class="table mt-3" id="data-table">
+        <tbody id="viewTimesheetBody">
+            <h1>TEST</h1>
+        </tbody>
+    </table>
+</div>

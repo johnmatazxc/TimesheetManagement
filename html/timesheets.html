@@ -1,0 +1,46 @@
+<!-- Content for the Timesheets tab -->
+<div class="container mt-3">
+    <div id="spinnerOverlay" class="overlay" style="display:none;">
+        <div id="loadingSpinner" class="spinner"></div>
+    </div>
+
+    <div id="timesheetScreen">
+        <button class="btn btn-primary" id="refreshTimesheets">Refresh Timesheet List</button>
+    
+        
+        <!-- Timesheet Table -->
+        <table class="table mt-3">
+            <thead>
+                <!-- Add your table header content here if needed -->
+            </thead>
+            <tbody id="timesheetsTableBody">
+                <!-- Table rows will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+
+    <div id="viewTimesheetScreen" style="display:none;">
+        <div style="text-align: right; margin-bottom: 10px;">
+            <button type="button" id="backButton" style="padding: 5px 10px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer;">
+                <i class="fas fa-arrow-left"></i> Back
+            </button>
+        </div>
+        <table class="table mt-3" id="data-table">
+            <tbody id="viewTimesheetBody">
+            </tbody>
+        </table>
+
+        <table class="table mt-5" id="data-table">
+            <tbody id="viewTimesheetBodyWorkDesc">
+            </tbody>
+        </table>
+
+        <div style="text-align: right; margin-bottom: 10px;">
+            <input type="checkbox" id="approveCheckbox" style="vertical-align: middle;">
+            <label for="approveCheckbox" style="margin-right: 20px; vertical-align: middle;">Approve Timesheet</label>
+            <button type="button" id="saveChangesBtn" style="margin-left: 15px; padding: 5px 10px; background-color: #4245fc!important; color: white; border: none; border-radius: 4px; cursor: pointer;">
+                Save Changes
+            </button>
+        </div>
+    </div>
+</div>
